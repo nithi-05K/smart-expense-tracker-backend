@@ -1,38 +1,136 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #e5e7eb;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+}
+
+h1 {
   text-align: center;
+  font-size: 60px;
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.card {
+  flex: 1;
+  padding: 30px;
+  border-radius: 20px;
   color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.balance {
+  background: white;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.income {
+  background: #22c55e;
+}
+
+.expense {
+  background: #ef4444;
+}
+
+.card h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.form-container input,
+.form-container select {
+  padding: 18px;
+  margin-right: 15px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 22px;
+}
+
+.form-container input {
+  width: 30%;
+}
+
+.form-container button {
+  padding: 18px 35px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.form-container button:hover {
+  background: #1d4ed8;
+}
+
+.expense-list h2 {
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.expense-item {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.expense-item h3 {
+  font-size: 28px;
+}
+
+.expense-item p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.expense-item button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
 }

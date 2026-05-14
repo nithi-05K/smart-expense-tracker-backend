@@ -8,7 +8,7 @@ function App() {
   const [amount, setAmount] = useState("");
   const [type, setType] = useState("income");
 
-  // ✅ Render Backend API
+  // ✅ Render Backend URL
   const API_URL =
     "https://smart-expense-tracker-api-4yqz.onrender.com/api/expenses";
 
@@ -18,7 +18,7 @@ function App() {
       const res = await axios.get(API_URL);
       setExpenses(res.data);
     } catch (error) {
-      console.log(error);
+      console.log("Backend sleeping...");
     }
   };
 
@@ -44,9 +44,14 @@ function App() {
       setAmount("");
 
       fetchExpenses();
+
+      alert("Expense added successfully");
     } catch (error) {
       console.log(error);
-      alert("Failed to add expense");
+
+      alert(
+        "Backend server is waking up. Wait 30 seconds and try again."
+      );
     }
   };
 
