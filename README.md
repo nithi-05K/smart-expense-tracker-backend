@@ -47,6 +47,7 @@ The frontend is developed using React.js and Tailwind CSS, while the backend is 
 
 ### Deployment
 - Vercel
+- Render
 
 ### Version Control
 - Git & GitHub
@@ -178,9 +179,9 @@ http://localhost:3000
 ---
 
 ## 🚀 Deployment
-
-The frontend application is deployed using Vercel.
-
+- Frontend deployed on Vercel
+- Backend deployed on Render
+- Database hosted on MongoDB Atlas
 
 ---
 
