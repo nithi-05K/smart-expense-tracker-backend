@@ -27,7 +27,7 @@ function App() {
   const fetchExpenses = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:5000/api/expenses"
+       https://smart-expense-tracker-api-4yqz.onrender.com/api/expenses
       );
 
       setExpenses(res.data);
@@ -50,7 +50,7 @@ function App() {
       }
 
       await axios.post(
-        "http://localhost:5000/api/expenses/add",
+        https://smart-expense-tracker-api-4yqz.onrender.com/api/expenses/add
         {
           title,
           amount,
@@ -71,7 +71,7 @@ function App() {
   const deleteExpense = async (id) => {
     try {
       await axios.delete(
-        `http://localhost:5000/api/expenses/${id}`
+      https://smart-expense-tracker-api-4yqz.onrender.com/api/expenses/${id}`
       );
 
       fetchExpenses();
