@@ -3,7 +3,8 @@
 A modern full-stack Expense Tracker application built using the MERN Stack (MongoDB, Express.js, React.js, Node.js). This application helps users manage income and expenses with real-time balance calculation through a clean and responsive dashboard UI.
 
 ## 🌐 Live Demo
-https://smart-expense-tracker-backend-theta.vercel.app/
+Frontend: https://smart-expense-tracker-backend-theta.vercel.app/
+Backend:  https://smart-expense-tracker-api-4yqz.onrender.com
 
 ---
 
